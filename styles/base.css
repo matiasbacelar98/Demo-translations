@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*--------- Components ---------*/
+@layer components {
+  .wrapper {
+    @apply w-[90%] mx-auto;
+  }
+}

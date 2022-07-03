@@ -40,6 +40,17 @@ module.exports = {
     spacing: generateSpacingValues(16, 20),
     colors,
     screens,
+    fontFamily: {
+      sans: ['Poppins, sans-serif'],
+    },
+    extend: {
+      keyframes: {
+        langList: {
+          '0%': { opacity: '0', transform: 'translateY(15px)' },
+          '50%': { opacity: '0.5' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
+        },
+      },
+    },
   },
-  plugins: [],
 };

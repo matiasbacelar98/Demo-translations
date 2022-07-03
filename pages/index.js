@@ -1,3 +1,14 @@
+import Header from '../components/Header';
+import Form from '../components/Form';
+
 export default function Home() {
-  return <h1 className='text-3xl font-bold underline'>Hello world!</h1>;
+  return (
+    <>
+      <Header />
+
+      <main className='h-[90vh] flex justify-center items-center'>
+        <Form />
+      </main>
+    </>
+  );
 }

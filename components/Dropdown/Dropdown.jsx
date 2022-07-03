@@ -12,6 +12,10 @@ const Dropdown = () => {
       id: 2,
       lang: 'spanish',
     },
+    {
+      id: 3,
+      lang: 'portuguese',
+    },
   ];
 
   const toggleDropdown = () => {

@@ -6,6 +6,7 @@ specifiers:
   eslint: 8.18.0
   eslint-config-next: 12.2.0
   next: 12.2.0
+  next-translate: ^1.4.0
   postcss: ^8.4.14
   react: 18.2.0
   react-dom: 18.2.0
@@ -15,6 +16,7 @@ specifiers:
 dependencies:
   country-flag-icons: 1.5.5
   next: 12.2.0_biqbaboplfbrettd7655fr4n2y
+  next-translate: 1.4.0_next@12.2.0+react@18.2.0
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
   react-icons: 4.4.0_react@18.2.0
@@ -1452,6 +1454,16 @@ packages:
   /natural-compare/1.4.0:
     resolution: {integrity: sha512-OWND8ei3VtNC9h7V60qff3SVobHr996CTwgxubgyQYEpg290h9J0buyECNNJexkFm5sOajh5G116RYA1c8ZMSw==}
     dev: true
+
+  /next-translate/1.4.0_next@12.2.0+react@18.2.0:
+    resolution: {integrity: sha512-FWheoN83fWTTfZ2g+a77GBcXRDVfSDP45iA0+G5wRZYE3xPYMy/6X+1I5j+ouczoJ2JI54vH59W/veZ1tZDRGQ==}
+    peerDependencies:
+      next: '>= 10.0.0'
+      react: '>= 16.8.0'
+    dependencies:
+      next: 12.2.0_biqbaboplfbrettd7655fr4n2y
+      react: 18.2.0
+    dev: false
 
   /next/12.2.0_biqbaboplfbrettd7655fr4n2y:
     resolution: {integrity: sha512-B4j7D3SHYopLYx6/Ark0fenwIar9tEaZZFAaxmKjgcMMexhVJzB3jt7X+6wcdXPPMeUD6r09weUtnDpjox/vIA==}

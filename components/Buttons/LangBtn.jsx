@@ -1,20 +1,28 @@
-import { ES, US, PT } from 'country-flag-icons/react/3x2';
+import { useRouter } from 'next/router';
 
-export const LangBtn = ({ lang }) => {
-  const checkLang = lang => {
-    if (lang === 'english') return <US className='h-3 w-3' />;
-    if (lang === 'portuguese') return <PT className='h-3 w-3' />;
-    return <ES className='h-3 w-3' />;
-  };
+export const LangBtn = ({ lang, locale, flag }) => {
+  const router = useRouter();
+  const currentLang = router.locale;
 
   const firstLetterToUppercase = word =>
     word.charAt(0).toUpperCase() + word.slice(1);
 
-  return (
-    <button className='md:flex md:items-center space-x-[0.5rem]' type='button'>
-      {checkLang(lang)}
+  const changeLanguage = () => {
+    router.push(`${router.asPath}`, null, {
+      locale: locale,
+    });
+  };
 
-      <span className='hidden md:text-gray md:block'>
+  return (
+    <button
+      onClick={changeLanguage}
+      className={`xl:flex xl:items-center space-x-[0.5rem] ${
+        currentLang !== locale ? 'opacity-50' : 'opacity-100'
+      }`}
+    >
+      {flag}
+
+      <span className='hidden xl:text-gray xl:block'>
         {firstLetterToUppercase(lang)}
       </span>
     </button>

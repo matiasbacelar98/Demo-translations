@@ -1,0 +1,15 @@
+{
+  "lenguages": "Lenguajes",
+  "options": {
+    "en": "ingles",
+    "es": "español",
+    "pt": "portugués"
+  },
+  "form": {
+    "product": "Perfume",
+    "content": "Una interpretación floral, solar y voluptuosa compuesta por Olivier Paige, Perfumista-Creador de la Casa Chanel",
+    "discountPrice": "$18.700",
+    "price": "$21.210",
+    "btnText": "Agregar al carrito"
+  }
+}

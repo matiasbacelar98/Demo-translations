@@ -1,6 +1,6 @@
 import { AiOutlineShoppingCart } from 'react-icons/ai';
 
-export const FormBtn = () => {
+export const FormBtn = ({ content }) => {
   return (
     <button
       className='
@@ -13,7 +13,7 @@ export const FormBtn = () => {
       onClick={() => console.log('Gabrielle Essence Eau de Parfum')}
     >
       <AiOutlineShoppingCart />
-      <span>Add to cart</span>
+      <span>{content}</span>
     </button>
   );
 };

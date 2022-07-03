@@ -1,8 +1,11 @@
+import useTranslation from 'next-translate/useTranslation';
 import { FormBtn } from '../Buttons';
 
 const Form = () => {
+  const { t } = useTranslation();
+
   return (
-    <div className='px-1 mx-auto max-w-[37.5rem]'>
+    <div className='px-1 mx-auto max-w-[40.625rem]'>
       <article className='flex overflow-hidden rounded-[5px]'>
         <div className='hidden md:block md:basis-6/12'>
           <img
@@ -12,9 +15,9 @@ const Form = () => {
           />
         </div>
 
-        <div className='basis-[100%] space-y-1 bg-white p-3 md:basis-6/12'>
+        <div className='basis-[100%] space-y-2 bg-white p-3 md:basis-6/12'>
           <span className='uppercase text-gray-light tracking-wider'>
-            Perfume
+            {t('common:form.product')}
           </span>
 
           <h1 className='text-3xl text-gray font-bold max-w-[15.625rem]'>
@@ -22,16 +25,19 @@ const Form = () => {
           </h1>
 
           <p className='text-gray-light text-base max-w-[15.625rem]'>
-            A floral, solar and voluptuous interpretation composed by Olivier
-            Paige, Perfume-Creator for the House of <span>chanel</span>
+            {t('common:form.content')}
           </p>
 
           <div className='flex space-x-3'>
-            <p className='text-3xl text-green font-bold'>149.99$</p>
-            <p className='text-gray-light text-sm line-through'>169.99$</p>
+            <p className='text-3xl text-green font-bold'>
+              {t('common:form.discountPrice')}
+            </p>
+            <p className='text-gray-light text-sm line-through'>
+              {t('common:form.price')}
+            </p>
           </div>
 
-          <FormBtn />
+          <FormBtn content={t('common:form.btnText')} />
         </div>
       </article>
     </div>

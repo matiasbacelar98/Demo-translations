@@ -5,7 +5,7 @@ const Form = () => {
   const { t } = useTranslation();
 
   return (
-    <div className='px-1 mx-auto max-w-[40.625rem]'>
+    <div className='px-1 mx-auto py-2 max-w-[40.625rem]'>
       <article className='flex overflow-hidden rounded-[5px]'>
         <div className='hidden md:block md:basis-6/12'>
           <img

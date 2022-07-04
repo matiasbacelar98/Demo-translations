@@ -1,11 +1,25 @@
-import { useState } from 'react';
-import { DropdownBtn, LangBtn } from '../Buttons';
-import { ES, US, PT } from 'country-flag-icons/react/3x2';
+import { useState, useRef } from 'react';
+
 import useTranslation from 'next-translate/useTranslation';
+import { useClickOutside } from '../../hooks';
+
+import { ES, US, PT } from 'country-flag-icons/react/3x2';
+
+import { DropdownBtn, LangBtn } from '../Buttons';
 
 const Dropdown = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const optionsLanguagesRef = useRef(null);
   const { t } = useTranslation();
+
+  // Close lang options when click outside
+  useClickOutside(optionsLanguagesRef, () => {
+    setIsDropdownOpen(false);
+  });
+
+  const toggleDropdown = () => {
+    setIsDropdownOpen(prev => !prev);
+  };
 
   const langOptions = [
     {
@@ -28,12 +42,8 @@ const Dropdown = () => {
     },
   ];
 
-  const toggleDropdown = () => {
-    setIsDropdownOpen(prev => !prev);
-  };
-
   return (
-    <div className='relative'>
+    <div className='relative' ref={optionsLanguagesRef}>
       <DropdownBtn
         isDropdownOpen={isDropdownOpen}
         toggleDropdown={toggleDropdown}

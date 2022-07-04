@@ -13,7 +13,7 @@ export const FormBtn = ({ content }) => {
       onClick={() => console.log('Gabrielle Essence Eau de Parfum')}
     >
       <AiOutlineShoppingCart />
-      <span>{content}</span>
+      <span className='w-max'>{content}</span>
     </button>
   );
 };

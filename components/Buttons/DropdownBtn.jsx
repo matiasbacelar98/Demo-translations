@@ -6,7 +6,9 @@ export const DropdownBtn = ({ isDropdownOpen, toggleDropdown, title }) => {
     <button
       id='dropdownMenuButton'
       aria-expanded={!isDropdownOpen ? 'false' : 'true'}
-      className='flex items-center space-x-[0.5rem] min-w-[8.75rem]'
+      className='
+      flex items-center justify-center
+      space-x-[0.5rem] min-w-[8.75rem]'
       onClick={toggleDropdown}
     >
       <GrLanguage />

@@ -3,7 +3,7 @@ import { useState, useRef } from 'react';
 import useTranslation from 'next-translate/useTranslation';
 import { useClickOutside } from '../../hooks';
 
-import { ES, US, PT } from 'country-flag-icons/react/3x2';
+import { ES, US, BR } from 'country-flag-icons/react/3x2';
 
 import { DropdownBtn, LangBtn } from '../Buttons';
 
@@ -37,8 +37,8 @@ const Dropdown = () => {
     {
       id: 3,
       lang: t('common:options.pt'),
-      flag: <PT className='h-3 w-3' />,
-      locale: 'pt',
+      flag: <BR className='h-3 w-3' />,
+      locale: 'pt-BR',
     },
   ];
 

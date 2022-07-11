@@ -38,7 +38,7 @@ const Dropdown = () => {
       id: 3,
       lang: t('common:options.pt'),
       flag: <BR className='h-3 w-3' />,
-      locale: 'pt-BR',
+      locale: 'pt',
     },
   ];
 

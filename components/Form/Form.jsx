@@ -5,7 +5,7 @@ const Form = () => {
   const { t } = useTranslation();
 
   return (
-    <div className='px-1 mx-auto py-2 max-w-[40.625rem]'>
+    <div className='px-1 mx-auto py-3 max-w-[40.625rem]'>
       <article className='flex overflow-hidden rounded-[5px] shadow-xl'>
         <div className='hidden md:block md:basis-6/12'>
           <img
@@ -16,7 +16,7 @@ const Form = () => {
         </div>
 
         <div className='basis-[100%] space-y-2 bg-white p-3 md:basis-6/12'>
-          <span className='uppercase text-gray-light tracking-wider'>
+          <span className='uppercase text-gray-light tracking-[0.4rem]'>
             {t('common:form.product')}
           </span>
 

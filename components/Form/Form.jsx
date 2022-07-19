@@ -32,6 +32,7 @@ const Form = () => {
             <p className='text-3xl text-green font-bold'>
               {t('common:form.discountPrice')}
             </p>
+
             <p className='text-gray-light text-sm line-through'>
               {t('common:form.price')}
             </p>

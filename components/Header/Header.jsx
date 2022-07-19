@@ -4,7 +4,7 @@ const Header = () => {
   return (
     <header
       className='
-      max-w-[1400px] mx-auto px-1 py-2
+      max-w-[1400px] mx-auto p-1
       min-h-[10vh] flex items-center justify-end'
     >
       <Dropdown />
